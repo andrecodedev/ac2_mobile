@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gerenciador de Livros"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Titulo"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etAutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Autor"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Genero:" />
+
+            <Spinner
+                android:id="@+id/spGenero"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <EditText
+                android:id="@+id/etAno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ano de publicacao"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status de leitura:" />
+
+            <Spinner
+                android:id="@+id/spStatus"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <CheckBox
+                android:id="@+id/cbFavorito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favorito" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSalvar"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Salvar" />
+
+                <Button
+                    android:id="@+id/btnLimpar"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Limpar" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#999999" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Filtrar genero: " />
+
+                <Spinner
+                    android:id="@+id/spFiltroGenero"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="48dp" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cbSoFavoritos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Somente favoritos" />
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total: 0 livros"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvLivros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

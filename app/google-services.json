@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "363970588829",
+    "project_id": "gerenciador-de-livros-bf0c1",
+    "storage_bucket": "gerenciador-de-livros-bf0c1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363970588829:android:ca2bf71ead072a3da3a474",
+        "android_client_info": {
+          "package_name": "com.mindlab.gerenciadordelivros"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGfu6dq035LNtQv7YWz7Qa4Smc3FWrRQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
